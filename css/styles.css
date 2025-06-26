@@ -345,15 +345,9 @@ section.bg-light {
     justify-content: center;
     flex-wrap: wrap;
   }
-}
 
-@media (min-width: 768px) and (max-width: 991px) {
   .hero-image {
     display: none !important;
-  }
-
-  .hero-content {
-    text-align: center;
   }
 }
 
