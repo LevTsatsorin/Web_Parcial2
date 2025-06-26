@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>La compañía Boeing</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="bg-white shadow-sm fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <div class="container">
+          <a class="navbar-brand" href="#inicio">
+            <img src="assets/boeing_logo.png" alt="Boeing logo" height="50" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-medium" href="#inicio"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-medium" href="#history"
+                  >Historia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-medium" href="#models"
+                  >Modelos clave</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-medium" href="#news"
+                  >Noticias</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-medium" href="#fleet"
+                  >Galería de flota</a
+                >
+              </li>
+              <li class="nav-item innovation-nav-item">
+                <a class="nav-link fw-medium" href="innovation.html"
+                  >Innovación</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="pt-header-offset">
+      <section id="inicio" class="hero-section">
+        <div class="container py-5">
+          <div class="row align-items-center min-vh-60">
+            <div class="col-lg-6 col-md-12 order-2 order-lg-1">
+              <div class="hero-content py-4">
+                <h1 class="display-4 fw-bold text-primary mb-4">
+                  Innovando el Futuro del Vuelo
+                </h1>
+                <p class="lead text-dark mb-4">
+                  <span class="fw-bold text-primary">Boeing</span> tiene una
+                  larga tradición de innovación en el sector aeroespacial,
+                  desarrollando aviones comerciales eficientes, sistemas de
+                  defensa y soluciones tecnológicas avanzadas.
+                </p>
+                <div class="d-flex gap-3 mt-4">
+                  <a href="#history" class="btn btn-boeing">
+                    <i class="bi bi-clock-history me-2"></i>Nuestra Historia
+                  </a>
+                  <a href="#models" class="btn btn-outline-primary">
+                    <i class="bi bi-airplane me-2"></i>Ver Modelos
+                  </a>
+                </div>
+                <div class="mt-4 d-flex align-items-center gap-4">
+                  <div class="text-center">
+                    <div class="h3 text-primary fw-bold mb-0">100+</div>
+                    <small class="text-muted">Años de Historia</small>
+                  </div>
+                  <div class="text-center">
+                    <div class="h3 text-primary fw-bold mb-0">10,000+</div>
+                    <small class="text-muted">Aviones Entregados</small>
+                  </div>
+                  <div class="text-center">
+                    <div class="h3 text-primary fw-bold mb-0">150+</div>
+                    <small class="text-muted">Países Servidos</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 order-1 order-lg-2">
+              <div class="hero-image py-4">
+                <img
+                  src="assets/inicio_foto.jpg"
+                  alt="Boeing plane"
+                  class="img-fluid rounded shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HISTORIA -->
+      <section id="history" class="bg-light">
+        <div class="container py-5">
+          <div class="row px-3">
+            <div class="col-12">
+              <h2 class="text-center mb-5">Historia de Boeing</h2>
+
+              <!-- Desktop Carousel (Large screens) -->
+              <div
+                id="historyCarousel"
+                class="carousel slide d-none d-lg-block"
+                data-bs-ride="carousel"
+                data-bs-interval="5000"
+              >
+                <div class="carousel-inner px-5">
+                  <div class="carousel-item active">
+                    <div class="row g-4">
+                      <div class="col-6">
+                        <div class="card border-0 shadow-sm h-100">
+                          <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                              <div
+                                class="timeline-dot bg-primary rounded-circle me-3"
+                              ></div>
+                              <h4 class="card-title text-primary mb-0">
+                                Antes de 1930
+                              </h4>
+                            </div>
+                            <p class="card-text">
+                              William Boeing fundó la empresa en 1916 y
+                              construyó su primer hidroavión junto a Westervelt.
+                              Durante los años 20, Boeing combinó producción de
+                              aviones con servicios de correo aéreo y fundó su
+                              propia aerolínea.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="card border-0 shadow-sm h-100">
+                          <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                              <div
+                                class="timeline-dot bg-primary rounded-circle me-3"
+                              ></div>
+                              <h4 class="card-title text-primary mb-0">
+                                Décadas de 1930 y 1940
+                              </h4>
+                            </div>
+                            <p class="card-text">
+                              Boeing desarrolló modelos pioneros como el
+                              Monomail y el 247, e introdujo cabinas
+                              presurizadas con el Stratoliner. Durante la
+                              Segunda Guerra Mundial, produjo miles de
+                              bombarderos B-17 y B-29, empleando a muchas
+                              mujeres en sus fábricas.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row g-4">
+                      <div class="col-6">
+                        <div class="card border-0 shadow-sm h-100">
+                          <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                              <div
+                                class="timeline-dot bg-primary rounded-circle me-3"
+                              ></div>
+                              <h4 class="card-title text-primary mb-0">
+                                Década de 1950
+                              </h4>
+                            </div>
+                            <p class="card-text">
+                              Lanzó el Boeing 707, el primer avión comercial a
+                              reacción estadounidense, y desarrolló misiles y
+                              turbinas. Boeing se consolidó como líder
+                              tecnológico durante la Guerra Fría y amplió su
+                              presencia en aviación comercial y militar.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="card border-0 shadow-sm h-100">
+                          <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                              <div
+                                class="timeline-dot bg-primary rounded-circle me-3"
+                              ></div>
+                              <h4 class="card-title text-primary mb-0">
+                                Década de 1960
+                              </h4>
+                            </div>
+                            <p class="card-text">
+                              Presentó modelos clave como el 727, 737 y 747, y
+                              fabricó partes del cohete Saturn V. También
+                              desarrolló hidroalas y participó en el programa
+                              espacial, convirtiéndose en una empresa clave en
+                              la exploración aeroespacial.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row g-4">
+                      <div class="col-6">
+                        <div class="card border-0 shadow-sm h-100">
+                          <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                              <div
+                                class="timeline-dot bg-primary rounded-circle me-3"
+                              ></div>
+                              <h4 class="card-title text-primary mb-0">
+                                Década de 1970
+                              </h4>
+                            </div>
+                            <p class="card-text">
+                              Boeing enfrentó una crisis por la caída del gasto
+                              militar, la deuda del 747 y la recesión económica.
+                              Aun así, el 747 transformó la aviación con su
+                              capacidad y autonomía, y marcó una nueva era en
+                              vuelos intercontinentales.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="card border-0 shadow-sm h-100">
+                          <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                              <div
+                                class="timeline-dot bg-primary rounded-circle me-3"
+                              ></div>
+                              <h4 class="card-title text-primary mb-0">
+                                Década de 1980
+                              </h4>
+                            </div>
+                            <p class="card-text">
+                              Boeing desarrolló los modelos 757 y 767, y
+                              actualizó el 737, enfrentando una fuerte
+                              competencia de Airbus. También participó en el
+                              programa del transbordador espacial, en la
+                              Estación Espacial Internacional y en el bombardero
+                              B-2 Spirit.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row g-4">
+                      <div class="col-6">
+                        <div class="card border-0 shadow-sm h-100">
+                          <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                              <div
+                                class="timeline-dot bg-primary rounded-circle me-3"
+                              ></div>
+                              <h4 class="card-title text-primary mb-0">
+                                Década de 1990
+                              </h4>
+                            </div>
+                            <p class="card-text">
+                              Lanzó el 777, su primer avión diseñado
+                              digitalmente y con sistema fly-by-wire. En 1997,
+                              Boeing se fusionó con McDonnell Douglas,
+                              reforzando su posición en el mercado global.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="card border-0 shadow-sm h-100">
+                          <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                              <div
+                                class="timeline-dot bg-primary rounded-circle me-3"
+                              ></div>
+                              <h4 class="card-title text-primary mb-0">
+                                Década de 2000
+                              </h4>
+                            </div>
+                            <p class="card-text">
+                              La compañía trasladó su sede a Chicago y
+                              desarrolló el 787 Dreamliner, apostando por
+                              eficiencia y materiales compuestos. También firmó
+                              una alianza con Lockheed Martin para lanzar la
+                              United Launch Alliance y enfrentó escándalos de
+                              corrupción y espionaje.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row g-4">
+                      <div class="col-6">
+                        <div class="card border-0 shadow-sm h-100">
+                          <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                              <div
+                                class="timeline-dot bg-primary rounded-circle me-3"
+                              ></div>
+                              <h4 class="card-title text-primary mb-0">
+                                Década de 2010
+                              </h4>
+                            </div>
+                            <p class="card-text">
+                              Boeing recibió el contrato para fabricar el KC-46
+                              y lanzó con éxito el 737 MAX, aunque el modelo se
+                              vio envuelto en una crisis tras dos accidentes
+                              fatales. La empresa enfrentó investigaciones
+                              oficiales y una fuerte caída de sus acciones y
+                              reputación.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="card border-0 shadow-sm h-100">
+                          <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                              <div
+                                class="timeline-dot bg-primary rounded-circle me-3"
+                              ></div>
+                              <h4 class="card-title text-primary mb-0">
+                                2020 hasta hoy
+                              </h4>
+                            </div>
+                            <p class="card-text">
+                              Enfrentando las consecuencias de la pandemia y del
+                              escándalo del MAX, Boeing registró pérdidas
+                              económicas significativas. Canceló su acuerdo con
+                              Embraer, reestructuró operaciones y continúa
+                              apostando por el 787 y versiones mejoradas del 737
+                              y 777.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#historyCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#historyCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+
+              <!-- Airplane Progress Indicator -->
+              <div class="airplane-progress-container d-none d-lg-block">
+                <div class="airplane-indicator" id="airplaneIndicator">
+                  <img
+                    src="assets/airplane-svg.svg"
+                    alt="Progress Plane"
+                    class="airplane-icon"
+                  />
+                </div>
+                <div class="progress-line">
+                  <div class="middle-dot"></div>
+                </div>
+              </div>
+
+              <!-- Mobile/Tablet Timeline (smaller screens) -->
+              <div class="timeline-container position-relative d-lg-none">
+                <div class="timeline-line position-absolute"></div>
+                <div class="row g-4">
+                  <div class="col-12">
+                    <div class="card border-0 shadow-sm h-100">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                          <div
+                            class="timeline-dot bg-primary rounded-circle me-3"
+                          ></div>
+                          <h4 class="card-title text-primary mb-0">
+                            Antes de 1930
+                          </h4>
+                        </div>
+                        <p class="card-text">
+                          William Boeing fundó la empresa en 1916 y construyó su
+                          primer hidroavión junto a Westervelt. Durante los años
+                          20, Boeing combinó producción de aviones con servicios
+                          de correo aéreo y fundó su propia aerolínea.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card border-0 shadow-sm h-100">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                          <div
+                            class="timeline-dot bg-primary rounded-circle me-3"
+                          ></div>
+                          <h4 class="card-title text-primary mb-0">
+                            Décadas de 1930 y 1940
+                          </h4>
+                        </div>
+                        <p class="card-text">
+                          Boeing desarrolló modelos pioneros como el Monomail y
+                          el 247, e introdujo cabinas presurizadas con el
+                          Stratoliner. Durante la Segunda Guerra Mundial,
+                          produjo miles de bombarderos B-17 y B-29, empleando a
+                          muchas mujeres en sus fábricas.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card border-0 shadow-sm h-100">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                          <div
+                            class="timeline-dot bg-primary rounded-circle me-3"
+                          ></div>
+                          <h4 class="card-title text-primary mb-0">
+                            Década de 1950
+                          </h4>
+                        </div>
+                        <p class="card-text">
+                          Lanzó el Boeing 707, el primer avión comercial a
+                          reacción estadounidense, y desarrolló misiles y
+                          turbinas. Boeing se consolidó como líder tecnológico
+                          durante la Guerra Fría y amplió su presencia en
+                          aviación comercial y militar.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card border-0 shadow-sm h-100">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                          <div
+                            class="timeline-dot bg-primary rounded-circle me-3"
+                          ></div>
+                          <h4 class="card-title text-primary mb-0">
+                            Década de 1960
+                          </h4>
+                        </div>
+                        <p class="card-text">
+                          Presentó modelos clave como el 727, 737 y 747, y
+                          fabricó partes del cohete Saturn V. También desarrolló
+                          hidroalas y participó en el programa espacial,
+                          convirtiéndose en una empresa clave en la exploración
+                          aeroespacial.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card border-0 shadow-sm h-100">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                          <div
+                            class="timeline-dot bg-primary rounded-circle me-3"
+                          ></div>
+                          <h4 class="card-title text-primary mb-0">
+                            Década de 1970
+                          </h4>
+                        </div>
+                        <p class="card-text">
+                          Boeing enfrentó una crisis por la caída del gasto
+                          militar, la deuda del 747 y la recesión económica. Aun
+                          así, el 747 transformó la aviación con su capacidad y
+                          autonomía, y marcó una nueva era en vuelos
+                          intercontinentales.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card border-0 shadow-sm h-100">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                          <div
+                            class="timeline-dot bg-primary rounded-circle me-3"
+                          ></div>
+                          <h4 class="card-title text-primary mb-0">
+                            Década de 1980
+                          </h4>
+                        </div>
+                        <p class="card-text">
+                          Boeing desarrolló los modelos 757 y 767, y actualizó
+                          el 737, enfrentando una fuerte competencia de Airbus.
+                          También participó en el programa del transbordador
+                          espacial, en la Estación Espacial Internacional y en
+                          el bombardero B-2 Spirit.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card border-0 shadow-sm h-100">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                          <div
+                            class="timeline-dot bg-primary rounded-circle me-3"
+                          ></div>
+                          <h4 class="card-title text-primary mb-0">
+                            Década de 1990
+                          </h4>
+                        </div>
+                        <p class="card-text">
+                          Lanzó el 777, su primer avión diseñado digitalmente y
+                          con sistema fly-by-wire. En 1997, Boeing se fusionó
+                          con McDonnell Douglas, reforzando su posición en el
+                          mercado global.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card border-0 shadow-sm h-100">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                          <div
+                            class="timeline-dot bg-primary rounded-circle me-3"
+                          ></div>
+                          <h4 class="card-title text-primary mb-0">
+                            Década de 2000
+                          </h4>
+                        </div>
+                        <p class="card-text">
+                          La compañía trasladó su sede a Chicago y desarrolló el
+                          787 Dreamliner, apostando por eficiencia y materiales
+                          compuestos. También firmó una alianza con Lockheed
+                          Martin para lanzar la United Launch Alliance y
+                          enfrentó escándalos de corrupción y espionaje.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card border-0 shadow-sm h-100">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                          <div
+                            class="timeline-dot bg-primary rounded-circle me-3"
+                          ></div>
+                          <h4 class="card-title text-primary mb-0">
+                            Década de 2010
+                          </h4>
+                        </div>
+                        <p class="card-text">
+                          Boeing recibió el contrato para fabricar el KC-46 y
+                          lanzó con éxito el 737 MAX, aunque el modelo se vio
+                          envuelto en una crisis tras dos accidentes fatales. La
+                          empresa enfrentó investigaciones oficiales y una
+                          fuerte caída de sus acciones y reputación.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card border-0 shadow-sm h-100">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                          <div
+                            class="timeline-dot bg-primary rounded-circle me-3"
+                          ></div>
+                          <h4 class="card-title text-primary mb-0">
+                            2020 hasta hoy
+                          </h4>
+                        </div>
+                        <p class="card-text">
+                          Enfrentando las consecuencias de la pandemia y del
+                          escándalo del MAX, Boeing registró pérdidas económicas
+                          significativas. Canceló su acuerdo con Embraer,
+                          reestructuró operaciones y continúa apostando por el
+                          787 y versiones mejoradas del 737 y 777.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MODELOS CLAVE -->
+      <section id="models" class="bg-white">
+        <div class="container py-5">
+          <h2 class="text-center mb-5">Modelos clave</h2>
+
+          <!-- Boeing 747 -->
+          <div class="model-showcase mb-5">
+            <div class="row align-items-center">
+              <div class="col-12">
+                <div class="model-header text-center mb-4">
+                  <span class="model-badge">Icónico</span>
+                  <h3 class="model-title">Boeing 747 "Queen of the Skies"</h3>
+                  <p class="model-subtitle">
+                    El avión que revolucionó la aviación comercial
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                <div class="model-image-container">
+                  <img
+                    src="assets/b747_foto.jpeg"
+                    alt="Boeing 747"
+                    class="model-image img-fluid"
+                  />
+                  <div class="image-overlay">
+                    <div class="overlay-content">
+                      <i
+                        class="bi bi-airplane-engines display-1 text-white"
+                      ></i>
+                      <p class="text-white mt-2">Doble cubierta</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="model-specs">
+                  <div class="spec-grid">
+                    <div class="spec-item">
+                      <div class="spec-icon">
+                        <i class="bi bi-calendar-event"></i>
+                      </div>
+                      <div class="spec-content">
+                        <span class="spec-label">Primer vuelo</span>
+                        <span class="spec-value">1969</span>
+                      </div>
+                    </div>
+                    <div class="spec-item">
+                      <div class="spec-icon">
+                        <i class="bi bi-people"></i>
+                      </div>
+                      <div class="spec-content">
+                        <span class="spec-label">Capacidad</span>
+                        <span class="spec-value">416 pasajeros</span>
+                      </div>
+                    </div>
+                    <div class="spec-item">
+                      <div class="spec-icon">
+                        <i class="bi bi-globe"></i>
+                      </div>
+                      <div class="spec-content">
+                        <span class="spec-label">Alcance</span>
+                        <span class="spec-value">13,450 km</span>
+                      </div>
+                    </div>
+                    <div class="spec-item">
+                      <div class="spec-icon">
+                        <i class="bi bi-speedometer2"></i>
+                      </div>
+                      <div class="spec-content">
+                        <span class="spec-label">Velocidad crucero</span>
+                        <span class="spec-value">Mach 0.85</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="model-description mt-4">
+                    <p class="lead">
+                      Conocido como "La Reina de los Cielos", el 747-400 es uno
+                      de los aviones más icónicos y fue el primero en tener dos
+                      pasillos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Boeing 737 -->
+          <div class="model-showcase mb-5">
+            <div class="row align-items-center">
+              <div class="col-12">
+                <div class="model-header text-center mb-4">
+                  <span class="model-badge model-badge-success"
+                    >Bestseller</span
+                  >
+                  <h3 class="model-title">Boeing 737</h3>
+                  <p class="model-subtitle">
+                    El caballo de batalla de la aviación comercial
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 order-2 order-lg-1">
+                <div class="model-specs">
+                  <div class="spec-grid">
+                    <div class="spec-item">
+                      <div class="spec-icon">
+                        <i class="bi bi-calendar-event"></i>
+                      </div>
+                      <div class="spec-content">
+                        <span class="spec-label">Primer vuelo</span>
+                        <span class="spec-value">1967</span>
+                      </div>
+                    </div>
+                    <div class="spec-item">
+                      <div class="spec-icon">
+                        <i class="bi bi-people"></i>
+                      </div>
+                      <div class="spec-content">
+                        <span class="spec-label">Capacidad</span>
+                        <span class="spec-value">160-189 pasajeros</span>
+                      </div>
+                    </div>
+                    <div class="spec-item">
+                      <div class="spec-icon">
+                        <i class="bi bi-globe"></i>
+                      </div>
+                      <div class="spec-content">
+                        <span class="spec-label">Alcance</span>
+                        <span class="spec-value">5,765 km</span>
+                      </div>
+                    </div>
+                    <div class="spec-item">
+                      <div class="spec-icon">
+                        <i class="bi bi-speedometer2"></i>
+                      </div>
+                      <div class="spec-content">
+                        <span class="spec-label">Velocidad crucero</span>
+                        <span class="spec-value">Mach 0.79</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="model-description mt-4">
+                    <p class="lead">
+                      Es uno de los aviones más vendidos del mundo y se usa
+                      ampliamente para vuelos cortos y medios.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 order-1 order-lg-2 mb-4 mb-lg-0">
+                <div class="model-image-container">
+                  <img
+                    src="assets/b737_foto.avif"
+                    alt="Boeing 737"
+                    class="model-image img-fluid"
+                  />
+                  <div class="image-overlay">
+                    <div class="overlay-content">
+                      <i class="bi bi-award display-1 text-white"></i>
+                      <p class="text-white mt-2">Más vendido</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Boeing 787 Dreamliner -->
+          <div class="model-showcase mb-5">
+            <div class="row align-items-center">
+              <div class="col-12">
+                <div class="model-header text-center mb-4">
+                  <span class="model-badge model-badge-info">Innovador</span>
+                  <h3 class="model-title">Boeing 787 Dreamliner</h3>
+                  <p class="model-subtitle">
+                    El futuro de la aviación eficiente
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                <div class="model-image-container">
+                  <img
+                    src="assets/b787_foto.png"
+                    alt="Boeing 787 Dreamliner"
+                    class="model-image img-fluid"
+                  />
+                  <div class="image-overlay">
+                    <div class="overlay-content">
+                      <i class="bi bi-lightning display-1 text-white"></i>
+                      <p class="text-white mt-2">Materiales compuestos</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="model-specs">
+                  <div class="spec-grid">
+                    <div class="spec-item">
+                      <div class="spec-icon">
+                        <i class="bi bi-calendar-event"></i>
+                      </div>
+                      <div class="spec-content">
+                        <span class="spec-label">Primer vuelo</span>
+                        <span class="spec-value">2009</span>
+                      </div>
+                    </div>
+                    <div class="spec-item">
+                      <div class="spec-icon">
+                        <i class="bi bi-people"></i>
+                      </div>
+                      <div class="spec-content">
+                        <span class="spec-label">Capacidad</span>
+                        <span class="spec-value">242-296 pasajeros</span>
+                      </div>
+                    </div>
+                    <div class="spec-item">
+                      <div class="spec-icon">
+                        <i class="bi bi-globe"></i>
+                      </div>
+                      <div class="spec-content">
+                        <span class="spec-label">Alcance</span>
+                        <span class="spec-value">14,010 km</span>
+                      </div>
+                    </div>
+                    <div class="spec-item">
+                      <div class="spec-icon">
+                        <i class="bi bi-speedometer2"></i>
+                      </div>
+                      <div class="spec-content">
+                        <span class="spec-label">Velocidad crucero</span>
+                        <span class="spec-value">Mach 0.85</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="model-description mt-4">
+                    <p class="lead">
+                      Avión moderno construido con materiales compuestos,
+                      diseñado para ser más eficiente y cómodo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Boeing 777 -->
+          <div class="model-showcase">
+            <div class="row align-items-center">
+              <div class="col-12">
+                <div class="model-header text-center mb-4">
+                  <span class="model-badge model-badge-warning"
+                    >Largo alcance</span
+                  >
+                  <h3 class="model-title">Boeing 777</h3>
+                  <p class="model-subtitle">Conectando el mundo sin escalas</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 order-2 order-lg-1">
+                <div class="model-specs">
+                  <div class="spec-grid">
+                    <div class="spec-item">
+                      <div class="spec-icon">
+                        <i class="bi bi-calendar-event"></i>
+                      </div>
+                      <div class="spec-content">
+                        <span class="spec-label">Primer vuelo</span>
+                        <span class="spec-value">1994</span>
+                      </div>
+                    </div>
+                    <div class="spec-item">
+                      <div class="spec-icon">
+                        <i class="bi bi-people"></i>
+                      </div>
+                      <div class="spec-content">
+                        <span class="spec-label">Capacidad</span>
+                        <span class="spec-value">314-396 pasajeros</span>
+                      </div>
+                    </div>
+                    <div class="spec-item">
+                      <div class="spec-icon">
+                        <i class="bi bi-globe"></i>
+                      </div>
+                      <div class="spec-content">
+                        <span class="spec-label">Alcance</span>
+                        <span class="spec-value">15,843 km</span>
+                      </div>
+                    </div>
+                    <div class="spec-item">
+                      <div class="spec-icon">
+                        <i class="bi bi-speedometer2"></i>
+                      </div>
+                      <div class="spec-content">
+                        <span class="spec-label">Velocidad crucero</span>
+                        <span class="spec-value">Mach 0.84</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="model-description mt-4">
+                    <p class="lead">
+                      Avión bimotor con el mayor alcance del mundo, usado para
+                      conectar ciudades muy distantes sin escalas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 order-1 order-lg-2 mb-4 mb-lg-0">
+                <div class="model-image-container">
+                  <img
+                    src="assets/b777_foto.jpg"
+                    alt="Boeing 777"
+                    class="model-image img-fluid"
+                  />
+                  <div class="image-overlay">
+                    <div class="overlay-content">
+                      <i class="bi bi-geo-alt display-1 text-white"></i>
+                      <p class="text-white mt-2">Mayor alcance</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOTICIAS -->
+      <section id="news" class="bg-light">
+        <div class="container py-5">
+          <h2 class="text-center mb-5 news-section-title">Últimas noticias</h2>
+          <div class="row g-4">
+            <div class="col-lg-6 col-md-12">
+              <article class="card border-0 shadow h-100">
+                <img
+                  src="assets/noticia_1.avif"
+                  alt="Accidente Alaska Airlines Boeing 737 Max"
+                  class="card-img-top"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title text-primary">
+                    La puerta de un avión de Alaska Airlines se desprendió en
+                    pleno vuelo por omisiones de los fabricantes
+                  </h3>
+                  <p class="text-muted small mb-3">
+                    Publicado el 24 de junio de 2025
+                  </p>
+                  <p class="card-text mb-3">
+                    Autoridades estadounidenses revelaron las causas del
+                    insólito accidente que involucró a un Boeing 737 Max 9.
+                  </p>
+                  <p class="card-text">
+                    La National Transportation Safety Board (NTSB) identificó
+                    una cadena de fallas en los procesos de fabricación,
+                    inspección y supervisión como la causa que permitió la
+                    expulsión de un panel de puerta en un vuelo de Alaska
+                    Airlines en enero de 2024.
+                  </p>
+                  <p class="card-text">
+                    La investigación evidenció que los pernos que aseguraban el
+                    panel se retiraron durante una reparación en la fábrica de
+                    Boeing y no se volvieron a instalar. Ni Boeing ni Spirit
+                    AeroSystems dejaron registro de este procedimiento crítico.
+                  </p>
+                  <div class="mt-auto">
+                    <a
+                      href="https://www.infobae.com/estados-unidos/2025/06/24/la-puerta-de-un-avion-de-alaska-airlines-se-desprendio-en-pleno-vuelo-por-omisiones-de-los-fabricantes-informe/"
+                      target="_blank"
+                      class="btn btn-primary"
+                      >Fuente oficial</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <article class="card border-0 shadow h-100">
+                <img
+                  src="assets/noticia_2.avif"
+                  alt="Boeing acciones Wall Street"
+                  class="card-img-top"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title text-primary">
+                    Las acciones de Boeing caen 6% en Wall Street tras el
+                    trágico accidente con 787-8 Dreamliner en India
+                  </h3>
+                  <p class="text-muted small mb-3">
+                    Publicado el 12 de junio de 2025
+                  </p>
+                  <p class="card-text mb-3">
+                    Un avión Boeing 787-8 Dreamliner de Air India se estrelló
+                    poco después de despegar con 242 personas a bordo.
+                  </p>
+                  <p class="card-text">
+                    Las acciones de Boeing sufren una nueva embestida en los
+                    mercados. En las operaciones previas a la apertura de Wall
+                    Street, los papeles de la firma caen 6%, cotizando en torno
+                    a los u$s201, tras conocerse un nuevo accidente
+                    protagonizado por uno de sus aviones.
+                  </p>
+                  <p class="card-text">
+                    El siniestro involucró a un Boeing 787-8 Dreamliner operado
+                    por Air India, que se estrelló minutos después de despegar
+                    desde Ahmedabad con destino a Londres. A bordo viajaban 242
+                    personas, y las autoridades indias confirmaron "numerosos
+                    fallecidos".
+                  </p>
+                  <div class="mt-auto">
+                    <a
+                      href="https://www.ambito.com/finanzas/las-acciones-boeing-caen-6-wall-street-el-tragico-accidente-india-n6155868"
+                      target="_blank"
+                      class="btn btn-primary"
+                      >Fuente oficial</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- GALERÍA DE FLOTA -->
+      <section id="fleet" class="bg-white py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="section-title">Galería de la flota</h2>
+            <p class="lead text-muted">
+              Una colección visual de la innovación aeroespacial
+            </p>
+          </div>
+
+          <div class="fleet-gallery">
+            <!-- Hero Aircraft - B747 -->
+            <div class="fleet-item hero">
+              <div class="fleet-card">
+                <div class="fleet-image-container">
+                  <img
+                    src="assets/gallery_fotos/gallery_b747.webp"
+                    alt="Boeing 747"
+                    class="fleet-image"
+                  />
+                </div>
+                <div class="fleet-caption">
+                  <div class="fleet-badge">Icónico</div>
+                  <h5 class="fleet-title">Boeing 747</h5>
+                  <p class="fleet-subtitle">La Reina de los Cielos</p>
+                  <div class="fleet-specs">
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Pasajeros</span>
+                      <span class="fleet-spec-value">416-524</span>
+                    </div>
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Alcance</span>
+                      <span class="fleet-spec-value">13,450 km</span>
+                    </div>
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Velocidad</span>
+                      <span class="fleet-spec-value">988 km/h</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modern Aircraft - B787 -->
+            <div class="fleet-item modern">
+              <div class="fleet-card">
+                <div class="fleet-image-container">
+                  <img
+                    src="assets/gallery_fotos/gallery_b787.jpg"
+                    alt="Boeing 787"
+                    class="fleet-image"
+                  />
+                </div>
+                <div class="fleet-caption">
+                  <div class="fleet-badge">Moderno</div>
+                  <h5 class="fleet-title">Boeing 787</h5>
+                  <p class="fleet-subtitle">Dreamliner - El futuro</p>
+                  <div class="fleet-specs">
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Pasajeros</span>
+                      <span class="fleet-spec-value">242-330</span>
+                    </div>
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Alcance</span>
+                      <span class="fleet-spec-value">14,800 km</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bestseller - B737 -->
+            <div class="fleet-item bestseller">
+              <div class="fleet-card">
+                <div class="fleet-image-container">
+                  <img
+                    src="assets/gallery_fotos/gallery_b737.jpg"
+                    alt="Boeing 737"
+                    class="fleet-image"
+                  />
+                </div>
+                <div class="fleet-caption">
+                  <div class="fleet-badge">Popular</div>
+                  <h5 class="fleet-title">Boeing 737</h5>
+                  <p class="fleet-subtitle">El más vendido del mundo</p>
+                  <div class="fleet-specs">
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Pasajeros</span>
+                      <span class="fleet-spec-value">108-215</span>
+                    </div>
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Alcance</span>
+                      <span class="fleet-spec-value">6,570 km</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Long Range - B777 -->
+            <div class="fleet-item long-range">
+              <div class="fleet-card">
+                <div class="fleet-image-container">
+                  <img
+                    src="assets/gallery_fotos/gallery_b777.webp"
+                    alt="Boeing 777"
+                    class="fleet-image"
+                  />
+                </div>
+                <div class="fleet-caption">
+                  <div class="fleet-badge">Distancia</div>
+                  <h5 class="fleet-title">Boeing 777</h5>
+                  <p class="fleet-subtitle">El gigante de largo alcance</p>
+                  <div class="fleet-specs">
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Pasajeros</span>
+                      <span class="fleet-spec-value">314-396</span>
+                    </div>
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Alcance</span>
+                      <span class="fleet-spec-value">17,370 km</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Next Gen - B737 MAX -->
+            <div class="fleet-item next-gen">
+              <div class="fleet-card">
+                <div class="fleet-image-container">
+                  <img
+                    src="assets/gallery_fotos/gallery_b737max.jpg"
+                    alt="Boeing 737 MAX"
+                    class="fleet-image"
+                  />
+                </div>
+                <div class="fleet-caption">
+                  <div class="fleet-badge">Siguiente Gen</div>
+                  <h5 class="fleet-title">Boeing 737 MAX</h5>
+                  <p class="fleet-subtitle">Eficiencia maximizada</p>
+                  <div class="fleet-specs">
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Pasajeros</span>
+                      <span class="fleet-spec-value">138-230</span>
+                    </div>
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Eficiencia</span>
+                      <span class="fleet-spec-value">+20%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Versatile - B757 -->
+            <div class="fleet-item versatile">
+              <div class="fleet-card">
+                <div class="fleet-image-container">
+                  <img
+                    src="assets/gallery_fotos/gallery_b757.jpg"
+                    alt="Boeing 757"
+                    class="fleet-image"
+                  />
+                </div>
+                <div class="fleet-caption">
+                  <div class="fleet-badge">Versátil</div>
+                  <h5 class="fleet-title">Boeing 757</h5>
+                  <p class="fleet-subtitle">Adaptable y eficiente</p>
+                  <div class="fleet-specs">
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Pasajeros</span>
+                      <span class="fleet-spec-value">200-289</span>
+                    </div>
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Alcance</span>
+                      <span class="fleet-spec-value">7,250 km</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Classic - B767 -->
+            <div class="fleet-item classic">
+              <div class="fleet-card">
+                <div class="fleet-image-container">
+                  <img
+                    src="assets/gallery_fotos/gallery_b767.jpg"
+                    alt="Boeing 767"
+                    class="fleet-image"
+                  />
+                </div>
+                <div class="fleet-caption">
+                  <div class="fleet-badge">Clásico</div>
+                  <h5 class="fleet-title">Boeing 767</h5>
+                  <p class="fleet-subtitle">Confiabilidad probada</p>
+                  <div class="fleet-specs">
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Pasajeros</span>
+                      <span class="fleet-spec-value">181-375</span>
+                    </div>
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Alcance</span>
+                      <span class="fleet-spec-value">11,825 km</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Vintage - B727 -->
+            <div class="fleet-item vintage">
+              <div class="fleet-card">
+                <div class="fleet-image-container">
+                  <img
+                    src="assets/gallery_fotos/gallery_b727.webp"
+                    alt="Boeing 727"
+                    class="fleet-image"
+                  />
+                </div>
+                <div class="fleet-caption">
+                  <div class="fleet-badge">Vintage</div>
+                  <h5 class="fleet-title">Boeing 727</h5>
+                  <p class="fleet-subtitle">Un clásico histórico</p>
+                  <div class="fleet-specs">
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Pasajeros</span>
+                      <span class="fleet-spec-value">149-189</span>
+                    </div>
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Era</span>
+                      <span class="fleet-spec-value">1963-1984</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Regional - B717 -->
+            <div class="fleet-item regional">
+              <div class="fleet-card">
+                <div class="fleet-image-container">
+                  <img
+                    src="assets/gallery_fotos/gallery_b717.avif"
+                    alt="Boeing 717"
+                    class="fleet-image"
+                  />
+                </div>
+                <div class="fleet-caption">
+                  <div class="fleet-badge">Regional</div>
+                  <h5 class="fleet-title">Boeing 717</h5>
+                  <p class="fleet-subtitle">Perfecto para rutas cortas</p>
+                  <div class="fleet-specs">
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Pasajeros</span>
+                      <span class="fleet-spec-value">106-134</span>
+                    </div>
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Alcance</span>
+                      <span class="fleet-spec-value">2,645 km</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Military - B52 -->
+            <div class="fleet-item military">
+              <div class="fleet-card">
+                <div class="fleet-image-container">
+                  <img
+                    src="assets/gallery_fotos/gallery_b52.webp"
+                    alt="Boeing B-52"
+                    class="fleet-image"
+                  />
+                </div>
+                <div class="fleet-caption">
+                  <div class="fleet-badge">Militar</div>
+                  <h5 class="fleet-title">Boeing B-52</h5>
+                  <p class="fleet-subtitle">Fortaleza voladora estratégica</p>
+                  <div class="fleet-specs">
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Tripulación</span>
+                      <span class="fleet-spec-value">5</span>
+                    </div>
+                    <div class="fleet-spec">
+                      <span class="fleet-spec-label">Alcance</span>
+                      <span class="fleet-spec-value">14,080 km</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-primary text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-1">Parcial 2, Programación Web I</p>
+            <p class="mb-0">Realizado por Tsatsorin Lev</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Airplane progress indicator for carousel
+      const carousel = document.getElementById("historyCarousel");
+      const airplaneContainer = document.querySelector(
+        ".airplane-progress-container"
+      );
+
+      if (carousel && airplaneContainer) {
+        // Update airplane position on slide change
+        carousel.addEventListener("slid.bs.carousel", function (event) {
+          const activeIndex = event.to;
+          airplaneContainer.setAttribute("data-slide", activeIndex);
+        });
+
+        // Set initial position
+        airplaneContainer.setAttribute("data-slide", "0");
+      }
+    </script>
+  </body>
+</html>
