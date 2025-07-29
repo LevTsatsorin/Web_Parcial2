@@ -584,6 +584,16 @@ section.bg-light {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem !important;
+    align-items: stretch;
+  }
+
+  .hero-content .d-flex.gap-4 > div {
+    flex: 1;
+    min-width: 120px;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .hero-content .text-center {
@@ -789,6 +799,13 @@ section[id] {
   .hero-content .d-flex.gap-4 {
     justify-content: center;
     flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .hero-content .d-flex.gap-4 > div {
+    flex: 1;
+    min-width: 120px;
+    min-height: 110px;
   }
 
   .card-img-top {
