@@ -1,94 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>La compañía Boeing</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-
-  <body>
-    <header class="bg-white shadow-sm fixed-top">
-      <nav class="navbar navbar-expand-custom navbar-light p-0">
-        <div class="container">
-          <a class="navbar-brand" href="#inicio">
-            <img src="assets/boeing_logo.png" alt="Boeing logo" height="50" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <!-- PÁGINAS PRINCIPALES -->
-              <li class="nav-item innovation-nav-item">
-                <a class="nav-link innovation-active fw-medium" href="#inicio"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark fw-medium" href="innovation.html"
-                  >Innovación</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark fw-medium" href="servicios.html"
-                  >Servicios</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark fw-medium" href="contacto.html"
-                  >Contacto</a
-                >
-              </li>
-              
-              <!-- SEPARADOR VISUAL -->
-              <li class="nav-divider d-none d-custom-block"></li>
-              
-              <!-- SECCIONES DE INICIO -->
-              <li class="nav-item nav-section-item">
-                <a class="nav-link text-dark fw-medium nav-section-link" href="#history"
-                  >Historia</a
-                >
-              </li>
-              <li class="nav-item nav-section-item">
-                <a class="nav-link text-dark fw-medium nav-section-link" href="#models"
-                  >Modelos</a
-                >
-              </li>
-              <li class="nav-item nav-section-item">
-                <a class="nav-link text-dark fw-medium nav-section-link" href="#news"
-                  >Noticias</a
-                >
-              </li>
-              <li class="nav-item nav-section-item">
-                <a class="nav-link text-dark fw-medium nav-section-link" href="#fleet"
-                  >Galería</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+<?php
+$currentPage = "inicio";
+include_once('../components/header.php');
+?>
 
     <main class="pt-header-offset">
       <section id="inicio" class="hero-section">
@@ -132,7 +45,7 @@
             <div class="col-lg-6 col-md-12 order-1 order-lg-2">
               <div class="hero-image py-4">
                 <img
-                  src="assets/inicio_foto.jpg"
+                  src="../assets/inicio_foto.jpg"
                   alt="Boeing plane"
                   class="img-fluid rounded shadow-lg"
                 />
@@ -422,7 +335,7 @@
               <div class="airplane-progress-container d-none d-lg-block">
                 <div class="airplane-indicator" id="airplaneIndicator">
                   <img
-                    src="assets/airplane-svg.svg"
+                    src="../assets/airplane-svg.svg"
                     alt="Progress Plane"
                     class="airplane-icon"
                   />
@@ -671,7 +584,7 @@
               <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
                 <div class="model-image-container">
                   <img
-                    src="assets/b747_foto.jpeg"
+                    src="../assets/b747_foto.jpeg"
                     alt="Boeing 747"
                     class="model-image img-fluid"
                   />
@@ -802,7 +715,7 @@
               <div class="col-lg-6 col-md-12 order-1 order-lg-2 mb-4 mb-lg-0">
                 <div class="model-image-container">
                   <img
-                    src="assets/b737_foto.avif"
+                    src="../assets/b737_foto.avif"
                     alt="Boeing 737"
                     class="model-image img-fluid"
                   />
@@ -832,7 +745,7 @@
               <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
                 <div class="model-image-container">
                   <img
-                    src="assets/b787_foto.png"
+                    src="../assets/b787_foto.png"
                     alt="Boeing 787 Dreamliner"
                     class="model-image img-fluid"
                   />
@@ -958,7 +871,7 @@
               <div class="col-lg-6 col-md-12 order-1 order-lg-2 mb-4 mb-lg-0">
                 <div class="model-image-container">
                   <img
-                    src="assets/b777_foto.jpg"
+                    src="../assets/b777_foto.jpg"
                     alt="Boeing 777"
                     class="model-image img-fluid"
                   />
@@ -983,7 +896,7 @@
             <div class="col-lg-6 col-md-12">
               <article class="card border-0 shadow h-100">
                 <img
-                  src="assets/noticia_1.avif"
+                  src="../assets/noticia_1.avif"
                   alt="Accidente Alaska Airlines Boeing 737 Max"
                   class="card-img-top"
                 />
@@ -1026,7 +939,7 @@
             <div class="col-lg-6 col-md-12">
               <article class="card border-0 shadow h-100">
                 <img
-                  src="assets/noticia_2.avif"
+                  src="../assets/noticia_2.avif"
                   alt="Boeing acciones Wall Street"
                   class="card-img-top"
                 />
@@ -1086,7 +999,7 @@
               <div class="fleet-card">
                 <div class="fleet-image-container">
                   <img
-                    src="assets/gallery_fotos/gallery_b747.webp"
+                    src="../assets/gallery_fotos/gallery_b747.webp"
                     alt="Boeing 747"
                     class="fleet-image"
                   />
@@ -1118,7 +1031,7 @@
               <div class="fleet-card">
                 <div class="fleet-image-container">
                   <img
-                    src="assets/gallery_fotos/gallery_b787.jpg"
+                    src="../assets/gallery_fotos/gallery_b787.jpg"
                     alt="Boeing 787"
                     class="fleet-image"
                   />
@@ -1146,7 +1059,7 @@
               <div class="fleet-card">
                 <div class="fleet-image-container">
                   <img
-                    src="assets/gallery_fotos/gallery_b737.jpg"
+                    src="../assets/gallery_fotos/gallery_b737.jpg"
                     alt="Boeing 737"
                     class="fleet-image"
                   />
@@ -1174,7 +1087,7 @@
               <div class="fleet-card">
                 <div class="fleet-image-container">
                   <img
-                    src="assets/gallery_fotos/gallery_b777.webp"
+                    src="../assets/gallery_fotos/gallery_b777.webp"
                     alt="Boeing 777"
                     class="fleet-image"
                   />
@@ -1202,7 +1115,7 @@
               <div class="fleet-card">
                 <div class="fleet-image-container">
                   <img
-                    src="assets/gallery_fotos/gallery_b737max.jpg"
+                    src="../assets/gallery_fotos/gallery_b737max.jpg"
                     alt="Boeing 737 MAX"
                     class="fleet-image"
                   />
@@ -1230,7 +1143,7 @@
               <div class="fleet-card">
                 <div class="fleet-image-container">
                   <img
-                    src="assets/gallery_fotos/gallery_b757.jpg"
+                    src="../assets/gallery_fotos/gallery_b757.jpg"
                     alt="Boeing 757"
                     class="fleet-image"
                   />
@@ -1258,7 +1171,7 @@
               <div class="fleet-card">
                 <div class="fleet-image-container">
                   <img
-                    src="assets/gallery_fotos/gallery_b767.jpg"
+                    src="../assets/gallery_fotos/gallery_b767.jpg"
                     alt="Boeing 767"
                     class="fleet-image"
                   />
@@ -1286,7 +1199,7 @@
               <div class="fleet-card">
                 <div class="fleet-image-container">
                   <img
-                    src="assets/gallery_fotos/gallery_b727.webp"
+                    src="../assets/gallery_fotos/gallery_b727.webp"
                     alt="Boeing 727"
                     class="fleet-image"
                   />
@@ -1314,7 +1227,7 @@
               <div class="fleet-card">
                 <div class="fleet-image-container">
                   <img
-                    src="assets/gallery_fotos/gallery_b717.avif"
+                    src="../assets/gallery_fotos/gallery_b717.avif"
                     alt="Boeing 717"
                     class="fleet-image"
                   />
@@ -1342,7 +1255,7 @@
               <div class="fleet-card">
                 <div class="fleet-image-container">
                   <img
-                    src="assets/gallery_fotos/gallery_b52.webp"
+                    src="../assets/gallery_fotos/gallery_b52.webp"
                     alt="Boeing B-52"
                     class="fleet-image"
                   />
@@ -1369,45 +1282,4 @@
       </section>
     </main>
 
-    <footer class="bg-primary text-white py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <p class="mb-1">Final, Programación Web I</p>
-            <p class="mb-0">Realizado por Tsatsorin Lev</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
-      integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
-      crossorigin="anonymous"
-    ></script>
-
-    <script>
-      // Airplane progress indicator for carousel
-      const carousel = document.getElementById("historyCarousel");
-      const airplaneContainer = document.querySelector(
-        ".airplane-progress-container"
-      );
-
-      if (carousel && airplaneContainer) {
-        // Update airplane position on slide change
-        carousel.addEventListener("slid.bs.carousel", function (event) {
-          const activeIndex = event.to;
-          airplaneContainer.setAttribute("data-slide", activeIndex);
-        });
-
-        // Set initial position
-        airplaneContainer.setAttribute("data-slide", "0");
-      }
-    </script>
-  </body>
-</html>
+<?php include_once('../components/footer.php'); ?>

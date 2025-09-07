@@ -86,7 +86,6 @@
 .innovation-nav-item {
   background: linear-gradient(135deg, #0052cc 0%, #1e90ff 100%) !important;
   border-radius: 25px !important;
-  margin-left: 8px !important;
   box-shadow: 0 4px 15px rgba(0, 82, 204, 0.3);
   transition: all 0.3s ease;
   border: 2px solid rgba(255, 255, 255, 0.3);
@@ -120,7 +119,25 @@
   box-shadow: none;
 }
 
-@media (min-width: 1050px) {
+/* Active navigation link styles */
+.innovation-active {
+  background: linear-gradient(135deg, #0052cc 0%, #1e90ff 100%) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 10px 20px !important;
+  border-radius: 25px !important;
+  box-shadow: 0 4px 15px rgba(0, 82, 204, 0.3) !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.innovation-active:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 82, 204, 0.4) !important;
+}
+
+@media (min-width: 1090px) {
   .navbar-expand-custom .navbar-nav {
     flex-direction: row;
   }
@@ -135,7 +152,7 @@
   }
 }
 
-@media (max-width: 1049px) {
+@media (max-width: 1089px) {
   .navbar-expand-custom .navbar-collapse {
     display: none;
   }
@@ -146,13 +163,13 @@
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1090px) {
   .navbar-expand-custom .navbar-nav .nav-link {
     margin: 2px;
   }
 }
 
-@media (max-width: 1049px) {
+@media (max-width: 1089px) {
   .navbar {
     min-height: 70px;
   }
@@ -276,7 +293,7 @@
   display: block !important;
 }
 
-@media (max-width: 1049px) {
+@media (max-width: 1089px) {
   .d-custom-block {
     display: none !important;
   }
@@ -308,7 +325,7 @@
   display: none;
 }
 
-@media (max-width: 1049px) {
+@media (max-width: 1089px) {
   .nav-divider {
     display: none !important;
   }
@@ -391,6 +408,16 @@ section.bg-light {
 .hero-section .container {
   position: relative;
   z-index: 2;
+}
+
+.hero-section-compact {
+  min-height: 30vh !important;
+  background: linear-gradient(
+    135deg,
+    #5e35b1 0%,
+    #43a047 50%,
+    #42a5f5 100%
+  ) !important;
 }
 
 .hero-content {
@@ -556,6 +583,18 @@ section.bg-light {
 .btn-outline-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(13, 110, 253, 0.2);
+}
+
+.btn-primary {
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(13, 110, 253, 0.3);
 }
 
 .hero-content .text-center {

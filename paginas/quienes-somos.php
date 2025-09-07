@@ -1,104 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Boeing - Servicios y Soporte</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-
-  <body>
-    <!-- HEADER -->
-    <header class="bg-white shadow-sm fixed-top">
-      <nav class="navbar navbar-expand-custom navbar-light p-0">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="assets/boeing_logo.png" alt="Boeing logo" height="50" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <!-- PÁGINAS PRINCIPALES -->
-              <li class="nav-item">
-                <a class="nav-link text-dark fw-medium" href="index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark fw-medium" href="innovation.html"
-                  >Innovación</a
-                >
-              </li>
-              <li class="nav-item innovation-nav-item">
-                <a
-                  class="nav-link innovation-active fw-medium"
-                  href="servicios.html"
-                  >Servicios</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark fw-medium" href="contacto.html"
-                  >Contacto</a
-                >
-              </li>
-
-              <!-- SEPARADOR VISUAL -->
-              <li class="nav-divider d-none d-custom-block"></li>
-
-              <!-- SECCIONES DE INICIO -->
-              <li class="nav-item nav-section-item">
-                <a
-                  class="nav-link text-dark fw-medium nav-section-link"
-                  href="index.html#history"
-                  >Historia</a
-                >
-              </li>
-              <li class="nav-item nav-section-item">
-                <a
-                  class="nav-link text-dark fw-medium nav-section-link"
-                  href="index.html#models"
-                  >Modelos</a
-                >
-              </li>
-              <li class="nav-item nav-section-item">
-                <a
-                  class="nav-link text-dark fw-medium nav-section-link"
-                  href="index.html#news"
-                  >Noticias</a
-                >
-              </li>
-              <li class="nav-item nav-section-item">
-                <a
-                  class="nav-link text-dark fw-medium nav-section-link"
-                  href="index.html#fleet"
-                  >Galería</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+<?php
+$currentPage = "quienes-somos";
+include_once('../components/header.php');
+?>
 
     <main class="pt-header-offset">
       <!-- HERO SECTION -->
@@ -108,19 +11,19 @@
             <div class="col-lg-6 col-md-12 order-2 order-lg-1">
               <div class="hero-content py-4">
                 <h1 class="display-4 fw-bold text-primary mb-4">
-                  Servicios Integrales de Boeing
+                  Quiénes Somos - Boeing
                 </h1>
                 <p class="lead text-dark mb-4">
-                  Ofrecemos soluciones completas que van más allá de la
-                  fabricación de aeronaves, incluyendo mantenimiento,
-                  entrenamiento, modernización y soporte técnico especializado.
+                  Somos líderes mundiales en la industria aeroespacial, ofreciendo 
+                  soluciones integrales que van más allá de la fabricación de aeronaves. 
+                  Nuestro compromiso es brindar excelencia en cada servicio que ofrecemos.
                 </p>
                 <div class="d-flex gap-3 mt-4">
                   <a href="#maintenance" class="btn btn-boeing">
-                    <i class="bi bi-tools me-2"></i>Ver Mantenimiento
+                    <i class="bi bi-tools me-2"></i>Nuestros Servicios
                   </a>
                   <a href="#training" class="btn btn-outline-primary">
-                    <i class="bi bi-mortarboard me-2"></i>Entrenamiento
+                    <i class="bi bi-mortarboard me-2"></i>Capacitación
                   </a>
                 </div>
                 <div class="mt-4 d-flex align-items-center gap-4">
@@ -142,7 +45,7 @@
             <div class="col-lg-6 col-md-12 order-1 order-lg-2">
               <div class="hero-image py-4">
                 <img
-                  src="assets/boeing_servicios.avif"
+                  src="../assets/boeing_servicios.avif"
                   alt="Boeing Services"
                   class="img-fluid rounded shadow-lg"
                 />
@@ -157,7 +60,7 @@
         <div class="container py-5">
           <div class="row">
             <div class="col-12">
-              <h2 class="text-center mb-5">Servicios de Mantenimiento</h2>
+              <h2 class="text-center mb-5">Nuestros Servicios de Mantenimiento</h2>
             </div>
           </div>
           <div class="row g-4">
@@ -270,7 +173,7 @@
         <div class="container py-5">
           <div class="row">
             <div class="col-12">
-              <h2 class="text-center mb-5">Servicios de Entrenamiento</h2>
+              <h2 class="text-center mb-5">Programas de Entrenamiento</h2>
             </div>
           </div>
           <div class="row g-4 mb-5">
@@ -400,7 +303,7 @@
         <div class="container py-5">
           <div class="row">
             <div class="col-12">
-              <h2 class="text-center mb-5">Servicios de Modernización</h2>
+              <h2 class="text-center mb-5">Modernización e Innovación</h2>
             </div>
           </div>
           <div class="row align-items-center">
@@ -505,10 +408,9 @@
         <div class="container py-5">
           <div class="row">
             <div class="col-12 text-center mb-5">
-              <h2>Soporte Global</h2>
+              <h2>Nuestra Presencia Global</h2>
               <p class="lead text-muted">
-                Red mundial de servicios para mantener su flota operativa las 24
-                horas
+                Red mundial de servicios para mantener operaciones de clase mundial las 24 horas
               </p>
             </div>
           </div>
@@ -607,7 +509,7 @@
                     </div>
                   </div>
                 </div>
-                <a href="contacto.html" class="btn btn-primary w-100">
+                <a href="contacto.php" class="btn btn-primary w-100">
                   <i class="bi bi-arrow-right me-2"></i>Contactar Ahora
                 </a>
               </div>
@@ -617,27 +519,4 @@
       </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="bg-primary text-white py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <p class="mb-1">Final, Programación Web I</p>
-            <p class="mb-0">Realizado por Tsatsorin Lev</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
+<?php include_once('../components/footer.php'); ?>

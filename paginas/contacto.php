@@ -1,105 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Boeing - Contacto</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
+<?php
+$currentPage = "contacto";
 
-  <body>
-    <!-- HEADER -->
-    <header class="bg-white shadow-sm fixed-top">
-      <nav class="navbar navbar-expand-custom navbar-light p-0">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="assets/boeing_logo.png" alt="Boeing logo" height="50" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <!-- PÁGINAS PRINCIPALES -->
-              <li class="nav-item">
-                <a class="nav-link text-dark fw-medium" href="index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark fw-medium" href="innovation.html"
-                  >Innovación</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark fw-medium" href="servicios.html"
-                  >Servicios</a
-                >
-              </li>
-              <li class="nav-item innovation-nav-item">
-                <a
-                  class="nav-link innovation-active fw-medium"
-                  href="contacto.html"
-                  >Contacto</a
-                >
-              </li>
-
-              <!-- SEPARADOR VISUAL -->
-              <li class="nav-divider d-none d-custom-block"></li>
-
-              <!-- SECCIONES DE INICIO -->
-              <li class="nav-item nav-section-item">
-                <a
-                  class="nav-link text-dark fw-medium nav-section-link"
-                  href="index.html#history"
-                  >Historia</a
-                >
-              </li>
-              <li class="nav-item nav-section-item">
-                <a
-                  class="nav-link text-dark fw-medium nav-section-link"
-                  href="index.html#models"
-                  >Modelos</a
-                >
-              </li>
-              <li class="nav-item nav-section-item">
-                <a
-                  class="nav-link text-dark fw-medium nav-section-link"
-                  href="index.html#news"
-                  >Noticias</a
-                >
-              </li>
-              <li class="nav-item nav-section-item">
-                <a
-                  class="nav-link text-dark fw-medium nav-section-link"
-                  href="index.html#fleet"
-                  >Galería</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
+include_once('../components/header.php');
+?>
     <main class="pt-header-offset">
       <!-- HERO SECTION -->
       <section id="contact-hero" class="hero-section">
@@ -142,7 +45,7 @@
             <div class="col-lg-6 col-md-12 order-1 order-lg-2">
               <div class="hero-image py-4">
                 <img
-                  src="assets/boeing_contact_img.png"
+                  src="../assets/boeing_contact.avif"
                   alt="Boeing Contact"
                   class="img-fluid rounded shadow-lg"
                 />
@@ -247,7 +150,7 @@
           <div class="row justify-content-center">
             <div class="col-lg-8 col-md-10">
               <div class="contact-form-container p-4">
-                <form class="contact-form">
+                <form class="contact-form" method="POST" action="gracias.php" enctype="multipart/form-data">
                   <div class="row g-3">
                     <!-- Personal Information -->
                     <div class="col-md-6">
@@ -256,6 +159,7 @@
                         type="text"
                         class="form-control"
                         id="firstName"
+                        name="firstName"
                         required
                       />
                     </div>
@@ -267,6 +171,7 @@
                         type="text"
                         class="form-control"
                         id="lastName"
+                        name="lastName"
                         required
                       />
                     </div>
@@ -280,41 +185,38 @@
                         type="email"
                         class="form-control"
                         id="email"
+                        name="email"
                         required
                       />
                     </div>
                     <div class="col-md-6">
                       <label for="phone" class="form-label">Teléfono</label>
-                      <input type="tel" class="form-control" id="phone" />
+                      <input type="tel" class="form-control" id="phone" name="phone" />
                     </div>
 
                     <!-- Company Information -->
                     <div class="col-md-6">
                       <label for="company" class="form-label">Empresa</label>
-                      <input type="text" class="form-control" id="company" />
+                      <input type="text" class="form-control" id="company" name="company" />
                     </div>
                     <div class="col-md-6">
                       <label for="position" class="form-label">Cargo</label>
-                      <input type="text" class="form-control" id="position" />
+                      <input type="text" class="form-control" id="position" name="position" />
                     </div>
 
                     <!-- Subject -->
                     <div class="col-12">
                       <label for="subject" class="form-label">Asunto *</label>
-                      <select class="form-select" id="subject" required>
+                      <select class="form-select" id="subject" name="subject" required>
                         <option value="">Seleccionar asunto...</option>
-                        <option value="sales">Consulta de Ventas</option>
-                        <option value="technical">Soporte Técnico</option>
-                        <option value="maintenance">
-                          Servicios de Mantenimiento
-                        </option>
-                        <option value="training">
-                          Programas de Entrenamiento
-                        </option>
-                        <option value="parts">Repuestos y Suministros</option>
-                        <option value="media">Consulta de Medios</option>
-                        <option value="general">Información General</option>
-                        <option value="other">Otro</option>
+                        <option value="Consulta de Ventas">Consulta de Ventas</option>
+                        <option value="Soporte Técnico">Soporte Técnico</option>
+                        <option value="Servicios de Mantenimiento">Servicios de Mantenimiento</option>
+                        <option value="Programas de Entrenamiento">Programas de Entrenamiento</option>
+                        <option value="Repuestos y Suministros">Repuestos y Suministros</option>
+                        <option value="Consulta de Medios">Consulta de Medios</option>
+                        <option value="Información General">Información General</option>
+                        <option value="Otro">Otro</option>
                       </select>
                     </div>
 
@@ -324,10 +226,26 @@
                       <textarea
                         class="form-control"
                         id="message"
+                        name="message"
                         rows="5"
                         required
                         placeholder="Describe tu consulta o necesidad..."
                       ></textarea>
+                    </div>
+
+                    <!-- File Upload -->
+                    <div class="col-12">
+                      <label for="attachment" class="form-label">Adjuntar Imagen (Opcional)</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="attachment"
+                        name="attachment"
+                        accept="image/*"
+                      />
+                      <div class="form-text">
+                        Se permiten todos los tipos de imágenes (JPG, PNG, GIF, WEBP, AVIF, etc.)
+                      </div>
                     </div>
 
                     <!-- Privacy Policy -->
@@ -337,6 +255,7 @@
                           class="form-check-input"
                           type="checkbox"
                           id="privacy"
+                          name="privacy"
                           required
                         />
                         <label class="form-check-label" for="privacy">
@@ -558,27 +477,4 @@
       </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="bg-primary text-white py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <p class="mb-1">Final, Programación Web I</p>
-            <p class="mb-0">Realizado por Tsatsorin Lev</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
+<?php include_once('../components/footer.php'); ?>
